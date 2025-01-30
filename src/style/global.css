@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: var(--d-secondary-background-color);
+}
+
+:root {
+    /*Cores primarias que não mudam se é modo escuro ou claro*/
+    --primary-color: #0094d9;
+    --secondary-color: #0066b2;
+    --tertiary-color: #79b83e;
+    --alternate-color: #f3943d;
+    /*Cores de texto e de background - Claro*/
+    --primary-text-color: #3c3c3c;
+    --secondary-text-color: #979ca3;
+    --l-primary-background-color: #fff;
+    --l-secondary-backgrond-color: #F1F5F9;
+    /*Cores de background - Escuro*/
+    --d-primary-background-color: #0C1319;
+    --d-secondary-background-color: #1A2329;
+    /*Cores auxiliares - Claro*/
+    --accent-1-color: #404040;
+    --accent-2-color: #808080;
+    --accent-3-color: #b0b0b0;
+    --accent-4-color: #e0e0e0;
+    /*Cores auxiliares - Escuro*/
+    --accent-1-color: #E0E0E0;
+    --accent-2-color: #B0B0B0;
+    --accent-3-color: #808080;
+    --accent-4-color: #404040;
+    /*Cores informativas*/
+    --success-color: #3dac00;
+    --error-color: #FF1414;
+    --warning-color: #FFB11D;
+    --info-color: #0C4CE9;
+    /*Claro*/
+    --accent-success-color: #D7FFC5;
+    --accent-error-color: #FFD9D9;
+    --accent-warning-color: #FFEEC7;
+    --accent-info-color: #CEEDFF;
+    /*Escuro*/
+    --accent-success-color: #0D1A00;
+    --accent-error-color: #1D0000;
+    --accent-warning-color: #201100;
+    --accent-info-color: #000C20;
+
+
+    /*Tamanho de fontes*/
+    --display-large-size-font: 55px;
+    --display-medium-size-font: 55px;
+    --display-small-size-font: 43px;
+    --headline-large-size-font: 34px;
+    --headline-medium-size-font: 30px;
+    --title-medium-size-font: 20px;
+    --title-small-size-font: 16px;
+    --body-large-size-font: 16px;
+    --body-small-size-font: 12px;
+    --label-large-size-font: 10px;
+    --label-medium-size-font: 10px;
+    --label-small-size-font: 10px;
+    /*Largura das fontes*/
+    --display-large-weight-font: 700;
+    --display-medium-weight-font: 500;
+    --display-small-weight-font: 300;
+    --headline-large-weight-font: 600;
+    --headline-medium-weight-font: 500;
+    --title-medium-weight-font: 600;
+    --title-small-weight-font: 600;
+    --body-large-weight-font: 500;
+    --body-small-weight-font: 500;
+    --label-large-weight-font: 700;
+    --label-medium-weight-font: 500;
+    --label-small-weight-font: 300;
+    /*Familia das fontes*/
+    --display-large-weight-font: "Source Sans 3", serif;
+    --display-medium-weight-font: "Source Sans 3", serif;
+    --display-small-weight-font: "Source Sans 3", serif;
+    --headline-large-weight-font: "Source Sans 3", serif;
+    --headline-medium-weight-font: "Source Sans 3", serif;
+    --headline-small-weight-font: "Source Sans 3", serif;
+    --title-large-weight-font: "Source Sans 3", serif;
+    --title-medium-weight-font: "Source Sans 3", serif;
+    --title-small-weight-font: "Source Sans 3", serif;
+    --body-large-weight-font: Roboto;
+    --body-medium-weight-font: Roboto;
+    --body-small-weight-font: Roboto;
+    --label-large-weight-font: Roboto;
+    --label-medium-weight-font: Roboto;
+    --label-small-weight-font: Roboto;
+    .headline_small {
+        padding: 5px 0px 5px 0px;
+        font-family: "Source Sans 3", serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--l-primary-background-color);
+    }
+    .title_large {
+        padding: 5px 0px 5px 0px;
+        font-family: "Source Sans 3", serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--l-primary-background-color);
+    }
+    .body_medium {
+        font-family: "Roboto", serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--l-primary-background-color);
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+     }
+     .footer_text {
+        font-family: "Roboto", serif;
+        font-size: var(--label-medium-size-font);
+        font-weight: var(--label-medium-weight-font);
+        color: var(--secondary-text-color);
+     }
+     .footer_img {
+        height: 15px;
+        padding-left: 20px;
+     }
+
+     .primary_button {
+        padding: 0px 25px 0px 25px;
+        height: 40px;
+        border: none;
+        border-radius: 7px;
+        background-color: var(--primary-color);
+        cursor: pointer;
+        font-family: "Roboto", serif;
+        font-size: var(--body-medium-size-font);
+        font-weight: var(--body-medium-weight-font);
+        color: var(--l-primary-background-color);
+     }
+     .primary_button:hover {
+        background-color: var(--secondary-color);
+     }
+
+     .alert_dialog {
+        width: 300px;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: var(--d-primary-background-color);
+        border: 1px solid var(--accent-4-color);
+        border-radius: 10px;
+        visibility: visible;
+     }
+     .alert_dialog_row_button {
+        display: flex;
+        justify-content: end;
+     }
+
+     .form_input_column {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+     .form_input {
+        color: white;
+        width: 100%;
+        background-color: #0C1319;
+        border: 1px solid var(--accent-4-color);
+        border-radius: 7px;
+        padding: 11px;
+        outline: none;
+      }
+      .form_input:focus {
+        border: 1px solid #0094D9;
+      }
+      .form_input_column .body_medium {
+        color: var(--secondary-text-color); 
+      }
+      .form_erro_text_input {
+        color: var(--error-color);
+        font-size: 12px;
+        font-family: "Roboto", serif;
+        padding-left: 10px;
+        padding-top: 5px;
+        display: none;
+      }
+      .form_input_container {
+         display: flex;
+         align-items: center;
+         position: relative;
+      }
+      .hidden_button {
+         border: none;
+         background-color: var(--d-primary-background-color);
+         position: absolute;
+         right: 0;
+         margin-right: 10px;
+         cursor: pointer;
+         visibility: visible;
+         font-family: "Font Awesome 5 Free"; /* Fonte para os ícones */
+         font-weight: 900;
+         font-size: 13px;
+         color: var(--secondary-text-color);
+      }
+      input[type="text"] + .hidden_button .fa-eye {
+         display: none;
+      }
+      
+      input[type="password"] + .hidden_button .fa-eye-slash {
+            display: none;
+      }
+      .hidden_button .fa-eye {
+         padding: 1px;
+      }
+}

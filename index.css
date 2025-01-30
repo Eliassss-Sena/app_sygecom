@@ -1,0 +1,192 @@
+@import url(/src/style/global.css);
+@import url(/src/style/vendor/reset.css);
+
+body {
+    background-color: var(--d-secondary-background-color);
+ }
+
+ p {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+label {
+    font-family: Roboto;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+ div {
+   box-sizing: border-box;
+ }
+
+.main_container {
+   margin: 0;
+   height: 100vh;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+.content {
+   height: 100vh;
+   display: flex;
+   justify-content: space-around;
+   overflow: auto;
+   align-items: center;
+ }
+
+.header{
+   display: flex;
+   padding: 20px;
+ }
+
+.img_header {
+   height: 40px;
+ }
+
+ .container_content1, .container_content2 {
+   display: flex;
+   height: 100%;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   justify-content: center;
+ }                                             
+.content_img {
+   max-width: 100%;
+   max-height: 100%;
+   height: auto;
+   display: block;
+ }
+
+.form_container {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #0C1319;
+    border-radius: 20px;
+    border: 1px solid #404040;
+    padding: 20px;
+ }
+ .form_validation {
+   display: flex;
+   flex-direction: column;
+   gap: 22px;
+ }
+.form_text {
+   font-family: "Source Sans 3", serif;
+   font-size: var(--body-medium-size-font);
+   font-weight: var(--body-medium-weight-font);
+   color: var(--secondary-text-color);
+}
+.form_options_row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px;
+}
+.form_remember_acess {
+   display: flex;
+   align-items: center;
+}
+.form_options_row label.body_medium {
+   cursor: pointer;
+}
+.form_options_row p.body_medium {
+   color: var(--primary-color);
+   cursor: pointer;
+}
+
+
+ input:-webkit-autofill {
+   background-color: #0c1319 !important; /* Cor de fundo */
+   color: white !important; /* Cor do texto */
+   -webkit-text-fill-color: white !important; /* Força a cor do texto no autofill */
+   border: 1px solid #404040 !important;
+   -webkit-box-shadow: 0 0 0px 1000px #0c1319 inset !important; /* Evita sobreposição de cores */
+   transition: background-color 5000s ease-in-out 0s; /* Previne reset de cor */
+   caret-color: white !important;
+}
+input:-webkit-autofill:focus {
+   background-color: #0c1319 !important;
+   color: white !important;
+   -webkit-text-fill-color: white !important; /* Força a cor do texto ao focar */
+}
+input:-moz-autofill {
+   background-color: #0c1319 !important;
+   color: white !important;
+   -moz-text-fill-color: white !important; /* Força a cor do texto no Firefox */
+   border: 1px solid #404040 !important;
+}
+
+ .checkbox {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    background-color: #0C1319; /* Cor de fundo */
+    border: 2px solid var(--secondary-text-color); /* Borda */
+    border-radius: 6px; /* Bordas arredondadas */
+    cursor: pointer;
+    margin: 0;
+ }
+
+ .checkbox:after {
+    display: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 13px;
+    content: "\f00c";
+    color: white;
+ }
+
+ .checkbox:hover {
+    background-color: #1a2229;
+ }
+
+ .checkbox:checked {
+    background-color: #0094D9;
+    border-color: #0094D9;
+ }
+
+ .checkbox:checked:after {
+    display: block;
+ }
+
+ ::-webkit-scrollbar {
+   width: 8px; /* Largura do scroll vertical */
+   height: 8px; /* Altura do scroll horizontal */
+}
+
+/* Estiliza o "trilho" da barra de rolagem */
+::-webkit-scrollbar-track {
+   background: #0C1319; /* Cor de fundo do trilho */
+   border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estiliza o "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+   background: #404040; /* Cor do polegar (parte que se move) */
+   border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estiliza o polegar ao passar o mouse por cima */
+::-webkit-scrollbar-thumb:hover {
+   background: #606060; /* Cor ao passar o mouse */
+}
+
+
+@media (max-width: 479px) {
+   .container_content1 {
+       display: none; /* Mostra no desktop */
+   }
+}
