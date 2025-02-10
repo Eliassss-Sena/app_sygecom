@@ -42,10 +42,6 @@ label {
    padding: 20px;
  }
 
-.img_header {
-   height: 40px;
- }
-
  .container_content1, .container_content2 {
    display: flex;
    height: 100%;
